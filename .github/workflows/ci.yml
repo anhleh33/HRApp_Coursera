@@ -17,12 +17,12 @@ jobs:
       - name: Set up JDK
         uses: actions/setup-java@v4
         with:
-          java-version: '21'
+          java-version: '24'
           distribution: 'temurin'
 
       - name: Confirm JDK setup
         run: |
-          echo "☕ Setting up JDK 21 with Temurin..."
+          echo "☕ Setting up JDK 24 with Temurin..."
           java -version
 
       - name: Build with Maven
