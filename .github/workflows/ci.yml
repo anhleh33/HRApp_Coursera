@@ -28,4 +28,4 @@ jobs:
       - name: Build with Maven
         run: |
           echo "🚀 Running Maven tests..."
-          mvn -B test
+          mvn -B test -Dsurefire.redirectTestOutputToFile=false
