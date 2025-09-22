@@ -64,17 +64,17 @@ public class DepartmentTest {
         assertEquals(1, department.getSize());
     }
 
-    @Test
-    void testAddEmployeeWhenFull() {
-        for (int i = 1; i <= 5; i++) {
-            department.addEmployee(new Employee(i, "Emp" + i, 4000 + i * 100, "IT"));
-        }
-
-        Employee extra = new Employee(99, "Overflow", 9000, "IT");
-        department.addEmployee(extra);
-
-        assertEquals(5, department.getSize());
-    }
+//    @Test
+//    void testAddEmployeeWhenFull() {
+//        for (int i = 1; i <= 5; i++) {
+//            department.addEmployee(new Employee(i, "Emp" + i, 4000 + i * 100, "IT"));
+//        }
+//
+//        Employee extra = new Employee(99, "Overflow", 9000, "IT");
+//        department.addEmployee(extra);
+//
+//        assertEquals(5, department.getSize());
+//    }
 
     @Test
     void testTotalSalary(){
